@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · All 55 Trophies</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23d4af5a'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='%231a0a12'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every one of the 55 official trophies — name, description and grade exactly as PlayStation publishes them — with a guide in our own words, a cited source for every fact, and a checklist that remembers your progress.</p>
+    <ul class="facts" id="facts">
+      <li><strong>55</strong> trophies · 1 platinum · 2 gold · 6 silver · 46 bronze</li>
+      <li><strong>~200 hours</strong> to platinum · difficulty 4/10</li>
+      <li><strong>0</strong> online trophies · <strong>1</strong> playthrough</li>
+      <li><strong>1</strong> possibly missable · cheats disable trophies</li>
+    </ul>
+    <p class="fact-source">Headline facts: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap (powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/) and PlanetGTA6 — GTA 6 Trophies (planetgta6.com/en/gta-6-trophies/). The game released 19 November 2026; two trophies were still unconfirmed at launch and are marked so in their guides.</p>
+  </div>
+</header>
+
+<main>
+  <section class="progress" aria-label="Progress">
+    <div class="progress-head">
+      <span id="progressText">0 of 55 earned</span>
+      <span id="gradeCounts"></span>
+    </div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="barWrap"><div class="bar-fill" id="barFill"></div></div>
+  </section>
+
+  <nav class="tabs" aria-label="Views">
+    <button type="button" id="tabChecklist" class="tab active" aria-pressed="true">Checklist</button>
+    <button type="button" id="tabRoadmap" class="tab" aria-pressed="false">Roadmap to the platinum</button>
+  </nav>
+
+  <section id="viewChecklist" class="view">
+    <div class="toolbar">
+      <label class="search">Search
+        <input id="search" type="search" placeholder="Search name, description or guide…" autocomplete="off">
+      </label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="exploration">Exploration</option>
+          <option value="combat">Combat</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoilerToggle" type="checkbox"> Hide story spoilers</label>
+      <span class="spacer"></span>
+      <button type="button" id="exportBtn">Export progress</button>
+      <label class="import">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+    <p class="hint" id="resultCount"></p>
+    <div class="layout">
+      <ul class="list" id="trophyList"></ul>
+      <aside class="detail" id="detail" aria-live="polite">
+        <p class="detail-empty">Select a trophy to see its guide, steps and sources.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="viewRoadmap" class="view hidden" aria-label="Roadmap to the platinum">
+    <div class="missable-banner" role="note">
+      <strong>⚠ The one possibly missable trophy: Positive Mental Attitude.</strong>
+      Meditate at every spot across Leonida — and the first meditation, at Jason’s house in Chapter 1, can only be done during Chapter 1. After the mission “Down to Earth”, talk to Lucia in the kitchen in the morning, follow her to the balcony and choose “Accept”. Keep a manual save from the start of Chapter 1. Source: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap.
+    </div>
+    <ol class="stages" id="stages"></ol>
+    <div class="roadmap-notes">
+      <h2>Before you start</h2>
+      <ul>
+        <li><strong>One playthrough, no mission replay.</strong> Keep a manual save at the start and end of each chapter (the game has 15 manual save slots and 1 autosave slot) — PowerPyx.</li>
+        <li><strong>Cheats disable trophies and saving.</strong> Do not use any cheat until the platinum is earned — PowerPyx.</li>
+        <li><strong>Nothing else is missable.</strong> Every trophy-related quest giver returns after the story, and the 100% Completion checklist only opens after the story — PowerPyx.</li>
+        <li><strong>Two trophies were unconfirmed at launch</strong> (“Bad Luck, I Guess” and “Ten Pin”). Their guides say so honestly instead of inventing a method — PowerPyx.</li>
+      </ul>
+      <p class="fact-source">Roadmap built from the official trophy descriptions and the cited sources. Sources: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap; PlanetGTA6 — GTA 6 Trophies; Exophase — Grand Theft Auto VI trophies; PSNProfiles — Grand Theft Auto VI trophies.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an unofficial, open-source fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide uses no Rockstar logo, artwork or game screenshots. Trophy names and descriptions are shown as PlayStation publishes them; every guide is written in our own words and cites its sources. Works fully offline: it loads nothing from outside this folder.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
